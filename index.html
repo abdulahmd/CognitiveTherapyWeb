@@ -1,0 +1,92 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Caregiver App</title> <style> body { font-family: Arial, sans-serif; }
+Download
+Copy code
+    h1, h2, h3 {
+        color: #444;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head> <body> <h1>Caregiver App</h1> <h2>Enter caregiver information</h2> <form> <label for="name">Name</label> <input type="text" id="name" name="name" required>
+Download
+Copy code
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age" required>
+
+    <label for="workplace">Place of work</label>
+    <input type="text" id="workplace" name="workplace" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Patient survey</h2>
+<form>
+    <label for="favorite-color">Favorite color</label>
+    <input type="text" id="favorite-color" name="favorite-color" required>
+
+    <label for="favorite-song">Favorite song</label>
+    <input type="text" id="favorite-song" name="favorite-song" required>
+
+    <label for="favorite-sport">Favorite sport</label>
+    <input type="text" id="favorite-sport" name="favorite-sport" required>
+
+    <label for="favorite-team">Favorite sport team</label>
+    <input type="text" id="favorite-team" name="favorite-team" required>
+
+    <label for="occupation">Occupation in earlier years</label>
+    <input type="text" id="occupation" name="occupation" required>
+
+    <label for="favorite-movie">Favorite movie</label>
+    <input type="text" id="favorite-movie" name="favorite-movie" required>
+
+    <label for="favorite-tv-show">Favorite television show</label>
+    <input type="text" id="favorite-tv-show" name="favorite-tv-show" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Describe their general mood today</h2>
+<form>
+    <label for="mood">Mood</label>
+    <select id="mood" name="mood">
+        <option value="good">Good</option>
+        <option value="bad">Bad</option>
+        <option value="okay">Okay</option>
+    </select>
+
+    <label for="changes">Describe any changes</label>
+    <textarea id="changes" name="changes" rows="4" cols="50"></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Generated Schedule</h2>
+<div id="schedule"></div>
+
+<script>
+    // Schedule generating code
+</script>
+</body> </html>

@@ -87,6 +87,47 @@ Copy code
 <div id="schedule"></div>
 
 <script>
-    // Schedule generating code
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 5) + 1;
+        }
+
+        function generateSchedule() {
+            let schedule = [];
+            for (let i = 0; i < 7; i++) {
+                let activity = '';
+                let number = getRandomNumber();
+                switch (number) {
+                    case 1:
+                        activity = 'Go for a walk';
+                        break;
+                    case 2:
+                        activity = 'Read a book';
+                        break;
+                    case 3:
+                        activity = 'Listen to music';
+                        break;
+                    case 4:
+                        activity = 'Watch a movie';
+                        break;
+                    case 5:
+                        activity = 'Engage in conversation';
+                        break;
+                }
+                schedule.push(activity);
+            }
+            return schedule;
+        }
+
+        function displaySchedule(schedule) {
+            let scheduleElement = document.getElementById('schedule');
+            scheduleElement.innerHTML = '<ul>';
+            for (let i = 0; i < schedule.length; i++) {
+                scheduleElement.innerHTML += `<li>${schedule[i]}</li>`;
+            }
+            scheduleElement.innerHTML += '</ul>';
+        }
+
+        let schedule = generateSchedule();
+        displaySchedule(schedule);
 </script>
 </body> </html>

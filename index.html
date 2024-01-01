@@ -93,6 +93,18 @@
         section:not(:first-child) {
             margin-top: 50px;
         }
+
+        #schedule-container {
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            margin-top: 30px;
+            overflow-x: hidden;
+            text-align: left;
+        }
+        
     </style>
 </head> 
 <body> 
@@ -160,7 +172,9 @@
 </form>
 
 <h2>Generated Schedule</h2>
-<div id="schedule"></div>
+<div id="schedule-container">
+    <div id="schedule"></div>
+</div>
 </section>
     
 <script>

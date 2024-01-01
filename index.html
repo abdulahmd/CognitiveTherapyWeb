@@ -1,12 +1,20 @@
 <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Caregiver App</title> 
     <style> 
-    body { 
+    body {
+        font-family: Arial, sans-serif;
         background: linear-gradient(to bottom, #000000, #6A0DAD);
-        font-family: Arial, sans-serif; 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; 
+        color: white;
     }
         
     h1, h2, h3 {
-        color: #444;
+        color: white;
     }
 
     label {
@@ -30,11 +38,21 @@
         margin-top: 10px;
     }
 
+    form {
+        width: 80%; /* Adjust width as needed */
+        max-width: 500px; /* Adjust max-width as needed */
+        margin-top: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Background color for forms */
+        border-radius: 8px; /* Rounded corners for forms */
+    }
+        
     button:hover {
         background-color: #45a049;
     }
 </style>
-</head> <body> <h1>Caregiver App</h1> <h2>Enter caregiver information</h2> <form> <label for="name">Name</label> <input type="text" id="name" name="name" required>
+</head> 
+<body> <h1>Caregiver App</h1> <h2>Enter caregiver information</h2> <form> <label for="name">Name</label> <input type="text" id="name" name="name" required>
     <label for="age">Age</label>
     <input type="text" id="age" name="age" required>
 

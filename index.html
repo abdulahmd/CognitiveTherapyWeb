@@ -13,7 +13,11 @@
             color: white;
         }
 
-        h1,
+        h1 {
+            font-family: Calibri, Arial, sans-serif;
+            color: white;
+        }
+        
         h2,
         h3 {
             font-family: Calibri, Arial, sans-serif;
@@ -73,7 +77,13 @@
     </style>
 </head> 
 <body> 
-<h1>Caregiver App</h1> 
+    
+<section id="title-section" style="text-align: center;">
+        <h1 style="font-size: 36px;">Caregiver App</h1>
+        <p style="font-size: 18px; color: gold;">Gold Award Entry</p>
+</section>
+
+<section>
 <h2>Enter caregiver information</h2> 
 <form> 
     <label for="name"><strong>Name</strong></label> 
@@ -131,7 +141,8 @@
 
 <h2>Generated Schedule</h2>
 <div id="schedule"></div>
-
+</section>
+    
 <script>
     function getRandomNumber(usedNumbers) {
         let randomNumber;

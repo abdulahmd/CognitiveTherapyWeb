@@ -5,23 +5,37 @@
             background: linear-gradient(to bottom, #000000, #6A0DAD);
             margin: 0;
             padding: 0;
+            color: white;
+        }
+
+        section {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            color: white;
+            text-align: center;
+            padding: 20px;
         }
 
         h1 {
-            font-family: Calibri, Arial, sans-serif;
-            color: white;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        
-        h2,
-        h3 {
-            font-family: Calibri, Arial, sans-serif;
-            color: white;
+
+        p {
+            font-size: 18px;
+            color: gold;
+            margin-bottom: 30px;
+        }
+
+        form {
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            margin-top: 30px;
         }
 
         label {
@@ -49,8 +63,6 @@
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(106, 13, 173, 0.6);
             transition: background-color 0.3s, box-shadow 0.3s;
-            display: block;
-            margin: 0 auto;
         }
 
         button:hover {
@@ -58,21 +70,9 @@
             box-shadow: 0 0 15px rgba(127, 30, 255, 0.8);
         }
 
-        form {
-            width: 80%;
-            max-width: 500px;
-            margin-top: 20px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-        }
-
-        form > button {
-            margin-top: 20px;
-        }
-
-        form > *:last-child {
-            margin-bottom: 20px; 
+        #schedule {
+            color: black;
+            text-align: left;
         }
     </style>
 </head> 

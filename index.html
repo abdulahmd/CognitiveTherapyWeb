@@ -95,6 +95,14 @@
         let schedule = [];
         let usedNumbers = [];
 
+        let favoriteColor = document.getElementById('favorite-color').value;
+        let favoriteSong = document.getElementById('favorite-song').value;
+        let favoriteSport = document.getElementById('favorite-sport').value;
+        let favoriteTeam = document.getElementById('favorite-team').value;
+        let occupation = document.getElementById('occupation').value;
+        let favoriteMovie = document.getElementById('favorite-movie').value;
+        let favoriteShow = document.getElementById('favorite-tv-show').value;
+        
         for (let i = 0; i < 7; i++) {
             let activity = '';
             let number = getRandomNumber(usedNumbers);
@@ -102,13 +110,13 @@
             usedNumbers.push(number);
             switch (number) {
                 case 1:
-                    activity = 'Music Therapy: Play their favorite songs or music from their era. Encourage them to sing along or play simple instruments like a tambourine or maracas.';
+                    activity = 'Music Therapy: Play songs similar to ${favoriteSong}. Encourage them to sing along or play simple instruments like a tambourine or maracas.';
                     break;
                 case 2:
-                    activity = 'Reminiscence Therapy: Create a memory box filled with items related to their past, such as old photographs, letters, or mementos. Discuss these items to stimulate memory recall.';
+                    activity = 'Reminiscence Therapy: Create a memory box filled with items related to their past (like their experience as a ${occupation}, such as old photographs, letters, or mementos. Discuss these items to stimulate memory recall.';
                     break;
                 case 3:
-                    activity = 'Art and Craft: Offer painting, drawing, or crafting activities. Provide supplies for them to create art or crafts that align with their interests, whether it\'s nature, animals, or abstract art. Have them physically draw things that they like so if the user puts in basketball then have them draw that. ';
+                    activity = 'Art and Craft: Offer painting, drawing, or crafting activities. They could use ${favoriteColor} in their art. Provide supplies for them to create art or crafts that align with their interests, whether it\'s nature, animals, or abstract art. Have them physically draw things that they like so if the user puts in basketball then have them draw that. ';
                     break;
                 case 4:
                     activity = 'Gardening: If they have a green thumb or used to enjoy gardening, provide potted plants or a small garden space for them to tend to. It can be therapeutic and engaging.';
@@ -123,7 +131,7 @@
                     activity = 'Puzzles and Games: Offer puzzles, Sudoku, crossword puzzles, or other brain games that match their cognitive abilities. Choose puzzles related to their interests, such as nature or history.';
                     break;
                 case 8:
-                    activity = 'Physical Activities: Gentle exercises like chair yoga or stretching can help maintain mobility and reduce restlessness. Ensure they\'re safe during physical activities.';
+                    activity = 'Physical Activities: Gentle exercises like chair yoga or stretching can help maintain mobility and reduce restlessness. Ensure they\'re safe during physical activities. If they\'re in a healthy state, allow them to engage in ${favoriteSport} in a monitored environment.';
                     break;
                 case 9:
                     activity = 'Nature Walks: If possible, take them for short walks in a garden, park, or around the neighborhood to connect with nature and get fresh air.';
@@ -138,10 +146,10 @@
                     activity = 'Sensory Stimulation: Offer sensory activities like scented oils, textured objects, or soft fabrics to engage their sense of touch and smell.';
                     break;
                 case 13:
-                    activity = 'Socializing: Facilitate social interaction with peers in a supportive group setting. Engage in discussions or group activities based on common interests.';
+                    activity = 'Socializing: Facilitate social interaction with peers in a supportive group setting. Engage in discussions or group activities based on common interests. For example, allow them to talk about the ${favoriteTeam}\'s games or anything related to the sport of ${favoriteSport}.';
                     break;
                 case 14:
-                    activity = 'Storytelling: Encourage them to share stories from their past or create fictional stories together. This can stimulate creativity and memory.';
+                    activity = 'Storytelling: Encourage them to share stories from their past or create fictional stories together. This can stimulate creativity and memory. They can also write stories based off their <i>${favoriteShow}</i> or <i>${favoriteMovie}'</i>.;
                     break;
                 case 15:
                     activity = 'Technology-Based Activities: Use tablets or computers for simple games, interactive apps, or video calls with loved ones. Ensure the technology is user-friendly and matches their capabilities.';

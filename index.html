@@ -1,56 +1,65 @@
 <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Caregiver App</title> 
-    <style> 
-    body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to bottom, #000000, #6A0DAD);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh; 
-        color: white;
-    }
-        
-    h1, h2, h3 {
-        color: white;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000000, #6A0DAD);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: white;
+        }
 
-    label {
-        display: block;
-        margin-top: 10px;
-    }
+        h1,
+        h2,
+        h3 {
+            color: white;
+        }
 
-    input[type="text"],
-    select {
-        width: 100%;
-        padding: 5px;
-        margin-top: 5px;
-    }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: white;
+            text-align: center;
+        }
 
-    button {
-        padding: 5px 10px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-        margin-top: 10px;
-    }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
 
-    form {
-        width: 80%; /* Adjust width as needed */
-        max-width: 500px; /* Adjust max-width as needed */
-        margin-top: 20px;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.9); /* Background color for forms */
-        border-radius: 8px; /* Rounded corners for forms */
-    }
-        
-    button:hover {
-        background-color: #45a049;
-    }
-</style>
+        button {
+            padding: 5px 10px;
+            background-color: #6A0DAD;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(106, 13, 173, 0.6);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background-color: #7F1EFF;
+            box-shadow: 0 0 15px rgba(127, 30, 255, 0.8);
+        }
+
+        form {
+            width: 80%;
+            max-width: 500px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+        }
+    </style>
 </head> 
 <body> <h1>Caregiver App</h1> <h2>Enter caregiver information</h2> <form> <label for="name">Name</label> <input type="text" id="name" name="name" required>
     <label for="age">Age</label>

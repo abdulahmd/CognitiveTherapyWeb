@@ -74,6 +74,10 @@
             color: black;
             text-align: left;
         }
+
+        section:not(:first-child) {
+            margin-top: 50px;
+        }
     </style>
 </head> 
 <body> 
@@ -83,7 +87,7 @@
         <p style="font-size: 18px; color: gold;">Gold Award Entry</p>
 </section>
 
-<section>
+<section id="form-section">
 <h2>Enter caregiver information</h2> 
 <form> 
     <label for="name"><strong>Name</strong></label> 
